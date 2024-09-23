@@ -1,0 +1,25 @@
+.app {
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.board {
+  display: flex;
+  justify-content: space-around;
+}
+
+.group-column {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 30%;
+}
+
+.group-content {
+  display: flex;
+  flex-direction: column;
+}
