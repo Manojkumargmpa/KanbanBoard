@@ -1,39 +1,44 @@
 .App {
     font-family: Arial, sans-serif;
     padding-top: 20px;
-  }
-  
-  h1 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+h1 {
     text-align: center;
-  }
-  .kanban-column h2 {
-  
+}
+
+.kanban-column h2 {
+
     font-size: 15px;
     margin-bottom: 25px;
-  }
-  .controls {
-    display: flex;
+}
+
+.controls {
+    display: inline-flex;
     flex-direction: column;
     justify-content: space-around;
     margin-bottom: 20px;
     gap: 10px;
     font-size: 13px;
-  }
-  
-  .group-selector, .sort-selector {
+}
+
+.group-selector,
+.sort-selector {
     display: flex;
     align-items: center;
-  }
-  
-  .kanban-board {
+}
+
+.kanban-board {
     display: flex;
     /* flex-wrap: wrap; */
     gap: 20px;
     background-color: #F5F5F7;
     justify-content: space-evenly;
-  }
-  
-  .kanban-column {
+}
+
+.kanban-column {
     /* background-color: #f4f4f4; */
     padding: 10px;
     border-radius: 5px;
@@ -41,73 +46,136 @@
     width: 30%;
     /* margin-left: 10px;
     margin-right: 10px; */
-  }
-  
-  .kanban-card {
+}
+
+.kanban-card {
     background-color: white;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 
-  }
-  
-  .kanban-card h3 {
+}
+
+.kanban-card h3 {
     margin: 0;
     font-size: 14px;
-    
-  }
-  .kanban-card .id{
+
+}
+
+.kanban-card .id {
     color: rgb(129, 121, 121);
     margin: 10px 0 10px 0;
-  }
-  .kanban-card p {
+}
+
+.kanban-card p {
     margin: 5px 0;
-  }
-  .tagAndDot{
+}
+
+.tagAndDot {
     display: flex;
     justify-content: flex-start;
     gap: 19px;
     margin-left: 10px;
     margin-top: 10px;
-  }
-  .kanban-card .three_dot{
+}
+
+.kanban-card .three_dot {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-  }
-  .kanban-card .tag {
+}
+
+.kanban-card .tag {
     display: inline-flex;
     align-items: center;
     padding: 4px 8px;
-    background-color: #f2f2f2; /* Background similar to the image */
+    background-color: #f2f2f2;
+    /* Background similar to the image */
     border-radius: 6px;
-    font-size: 14px; /* Adjust size as needed */
-    color: #b3b3b3; /* Text color based on image */
-    font-weight: 500; /* Slightly bold */
+    font-size: 14px;
+    /* Adjust size as needed */
+    color: #b3b3b3;
+    /* Text color based on image */
+    font-weight: 500;
+    /* Slightly bold */
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-    
 
-  }
-  .kanban-card .dot {
+
+}
+
+.kanban-card .dot {
     height: 8px;
     width: 8px;
-    background-color: #b3b3b3; /* Dot color from the image */
+    background-color: #b3b3b3;
+    /* Dot color from the image */
     border-radius: 50%;
     margin-right: 8px;
     /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); */
-    
-    
-  }
-  .kanban-board .column-details{
+
+
+}
+
+.kanban-board .column-details {
     display: flex;
     justify-content: center;
     font-size: 15px;
     gap: 6px;
     margin-bottom: 25px;
-    
-  }
-  .kanban-board .column-details .count{
+
+}
+
+.kanban-board .column-details .count {
     margin-right: auto;
     font-weight: 500;
     color: #757575;
+}
+
+.display-button span {
+    margin-left: 6px;
+
+}
+
+.display-button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    display: block;
+
+}
+.controls {
+    /* position: absolute;
+    top: 100%;
+    left: 0; */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 12px;
+    margin-top: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+  
+  .dropdown-item {
+    display: flex;
+    /* justify-content: f; */
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  
+  .dropdown-item label {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .dropdown-item select {
+    padding: 4px 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
   }
