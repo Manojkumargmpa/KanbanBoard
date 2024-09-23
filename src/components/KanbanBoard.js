@@ -26,10 +26,13 @@ const KanbanBoard = ({ tickets, users, groupBy, sortBy }) => {
 
   const icons_priorities = [
     NoPriority,
-    UrgentPriority,
-    HighPriority,
+    LowPriority,
     MediumPriority,
-    LowPriority
+    HighPriority,
+    UrgentPriority
+    
+   
+   
   ];
 
   // Group tickets based on 'status', 'user', or 'priority'
